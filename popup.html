@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Speed Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+            
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #speedDisplay {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            background-color: white;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 12px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #83cdff;
+        }
+    </style>
+</head>
+<body>
+    <h2>YT Speed Control</h2>
+    <p id="speedDisplay" style="background-color: gainsboro; border-radius: 10px; padding:10px;">Speed: 1.00x</p>
+    <div class="button-container">
+        <button id="decrease">⏪</button>
+        <button id="increase">⏩</button>
+        <button id="reset">🔄</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

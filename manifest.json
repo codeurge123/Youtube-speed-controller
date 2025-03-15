@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Speed Controller",
+    "version": "1.2",
+    "description": "Easily control the playback speed of YouTube videos with a floating panel.",
+    "icons": {
+      "128": "icon.png"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["*://www.youtube.com/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
